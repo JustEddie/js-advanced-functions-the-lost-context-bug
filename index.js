@@ -18,7 +18,7 @@ let printCard = function() {
   // this that printCard has by virtue of configuration being passed
   // in as a thisArg
   this.signatories.forEach(s => console.log(`${this.closing[s]}, ${s}`)
-  )
+  )//using arrow function in this function : so it doesn't make another context inside to cause an error
 }
 
 printCard.call(configuration)
